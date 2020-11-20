@@ -80,12 +80,12 @@ folium.LayerControl().add_to(laMap)
 laMap
 ```
 Your map should look something like this:
-![LA Zip Map](images/LA-Zip-Map.png)
+![LA Zip Map](LA-Zip-Map.png)
 
 It can be difficult to understand how to get all the components in place for a choropleth, so let’s take a look at how it works. The choropleth needs to know what color to fill in for zip code 90001, for example. It checks the pandas dataframe referenced by the `data field`, searches the `key_on` column for the zip code and finds the other column listed in columns which is `numStores`. It then knows that it needs to fill in the color corresponding to 3 stores in zip code 90001. It then looks in the GeoJSON referenced by the `geo_data` field, and finds zip code 90001 and its associated shape info, which tells it which shape to draw for that zip code on the map. Through these links, it has all the necessary information.
 
 Another way to think about this is with a visual:
-![](images/CSV2GeoJson.png)
+![](CSV2GeoJson.png)
 
 ### Other things to explore in Folium
 When you first establish your map, there are a variety of parameters to set, including the attribution, which accepts basic `HTML` tags. I've purposefully referenced OpenStreetMap, Carto, and Ritvik Kharkar because they all created some part of the map (base layers, data, etc.), even though we've coded it. However, you can change the attribution to acknowledge whatever basemap style or data you are using.
@@ -101,7 +101,7 @@ In using zip codes, we basically choose a random geography (shape) into which we
 
 In GIS, the geography you choose to aggregate your data into, can radically alter the representation of your data. We call this the "[Modifiable Areal Unit Problem](https://www.e-education.psu.edu/sgam/node/214)" or MAUP. Have a look at the image below: exact same point data, represented as a chorolpeth using 3 different zones.
 
-![MAUP](images/MAUP.png)
+![MAUP](MAUP.png)
 
 Unfortunately, I see really good coders (and even some GISers) who don't understand the concepts of geography who still aggregate data into zip codes and it drives geographers crazy. [Carto has a nice blog post about this](https://carto.com/blog/zip-codes-spatial-analysis/). Whenever you aggregate data into "zonal units" (e.g. shapes, geographies, whatever you want to call it) think carefully about _why_ you are using those particular shapes.
 
@@ -126,7 +126,7 @@ laMap
 ```
 Your map should look something like this:
 
-![LA Zip Map](images/LA-point-map.png)
+![LA Zip Map](LA-point-map.png)
 
 We can clearly see all the Starbucks in LA County as red points within the LA County region (in blue). We've also used a base map that highlights the road network (because our areas of interest are all located on roads) and that highlights national forest areas (zoom in and you'll see it). Of course, you can customize any of the colors and shapes of the points by passing some different parameters into `folium.CircleMarker`. Compare this to the map above... which one gives a more "real" understanding of the distribution of StarJunks?
 
@@ -166,7 +166,7 @@ statemap
 ```
 Your map should look something like this:
 
-![LA Zip Map](images/State_choropleth.png)
+![LA Zip Map](State_choropleth.png)
 
 Experiment with some of Foliums features: change basemaps, attribution, symbology etc. Happy coding!
 
