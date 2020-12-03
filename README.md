@@ -41,6 +41,9 @@ The following is a screen capture of the webmap:
 
 ### Discussion
 
+The most valuable information that I learned through this tutorial was how the geographic information GeoJSON files can be linked to Pandas dataframes in order to display tabular data within polygons.  With this course being the first time being exposed to the programming side of GIS, I found it useful to understand how python libraries that use geographic information are able to interact with each other to display information.  
+
+I also found the discussion about the appropriate geographic shapes to use to aggregate points interesting.  I feel that in the case of Starbucks locations, aggregating to zip codes misrepresented the data, but also simply displaying the point data was difficult to interpret.  To display this information in a meaningful way, a point density map or aggregating to city blocks or census tracts would be effective.  Moving forward, I would like to research how to perform a point density analysis using python libraries.  
 
 
 
