@@ -17,7 +17,7 @@ For the first two maps of Starbucks locations in LA county, a .geojson of the LA
 
 The following is a screen capture of the webmap:
 
-![Folium Product](images/la1.jpg)
+![Folium Product](/images/la1.jpg)
 
 ### Map of point locations of Starbucks stores in LA county
 
