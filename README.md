@@ -6,7 +6,7 @@ This repo contains a .ipynb file that has three sets of code to produce three in
 
 For the first two maps of Starbucks locations in LA county, a .geojson of the LA county boundary and a .geojson of LA zipcodes polygons as well as a .csv file of Starbucks locations is used.  In the last map, data was access from the [Folium Github data repo](https://github.com/python-visualization/folium/tree/master/examples/data).
 
-### Choropleth of Starbucks location counts in LA zipcodes
+## Map 1: Choropleth of Starbucks location counts in LA zipcodes
 
 1.  The LA county .geojson, zipcode .geojson, and .csv of Starbucks locations are imported.
 2.  The folium, pandas, and json libraries are imported.
@@ -19,7 +19,7 @@ The following is a screen capture of the webmap:
 
 ![Folium Product](/Images/la1.JPG)
 
-### Map of point locations of Starbucks stores in LA county
+## Map 2: Point locations of Starbucks stores in LA county
 
 1.  The LA county boundary geojson is added to the map.
 2.  For each row within the Starbucks dataframe, the latitude and longitude are assigned to a point marker.  Symbology is chosen for the point markers.
@@ -29,7 +29,7 @@ The following is a screen capture of the webmap:
   
 ![Folium Product](Images/la2.jpg)
 
-### Choropleth of 2012 unemployment rates for U.S. States
+### Map 3: Choropleth of 2012 unemployment rates for U.S. States
 
 1.  The url of the github data folder containing a U.S. States .json and a 2012 State unemployment .csv is assigned to a variable and these datafiles are opened.  The .csv is read as a dataframe and assigned to a variable.
 2.  A map is initialized and then a choropleth is created by displaying the U.S. States .json and linking the unemployment dataframe using the 'State' field in the dataframe and the ID in the .json.  Symbology is chosen for the choropleth layer.
