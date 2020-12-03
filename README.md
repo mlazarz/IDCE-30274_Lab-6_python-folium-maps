@@ -17,7 +17,7 @@ For the first two maps of Starbucks locations in LA county, a .geojson of the LA
 
 The following is a screen capture of the webmap:
 
-![Folium Product](/images/la1.jpg)
+![Folium Product](/Images/la1.JPG)
 
 ### Map of point locations of Starbucks stores in LA county
 
@@ -27,7 +27,7 @@ The following is a screen capture of the webmap:
 
 The following is a screen capture of the webmap:
   
-![Folium Product](images/la2.jpg)
+![Folium Product](Images/la2.jpg)
 
 ### Choropleth of 2012 unemployment rates for U.S. States
 
@@ -37,7 +37,7 @@ The following is a screen capture of the webmap:
 
 The following is a screen capture of the webmap:
 
-![Folium Product](images/unemp.jpg)
+![Folium Product](Images/unemp.jpg)
 
 ### Discussion
 
